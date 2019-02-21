@@ -20,6 +20,11 @@ import com.amazonaws.services.ec2.model.Volume;
  */
 public class Handler {
 
+    /**
+     * Lambda处理程序
+     * Handler
+     * @param params
+     */
     public void handler(Params params) {
         //创建EC2客户端
         AmazonEC2 ec2 = createEC2Client(params.getAccessKey(), params.getSecretKey(), params.getRegion());
